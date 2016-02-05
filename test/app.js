@@ -1,2 +1,2 @@
-var helloworld = require('./helloworld.js');
+var helloworld = require('../lib/helloworld.js');
 helloworld();
