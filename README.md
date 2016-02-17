@@ -1,11 +1,12 @@
 # Project
 #### Build Status
 [![Build Status](https://travis-ci.org/miles990/helloworld.svg?branch=master)](https://travis-ci.org/miles990/helloworld) 
+
 #### Comment
 Demo a private npm package for print "Hello World".
 
 
-# Require
+# Required
 - Node.js
 - Private npm server - [Sinopia](https://github.com/rlidwka/sinopia) (https://github.com/rlidwka/sinopia)
 
@@ -27,9 +28,24 @@ npm install -g sinopia
 sinopia
 ```
 
+#### Open private npm server (sinopia default)
+[http://localhost:4873](http://localhost:4873)
+
+#### Set npm config
+```
+npm set registry http://localhost:4873
+```
+
 #### Write npm module or clone this project
 ```
 git clone https://github.com/miles990/helloworld.git
+```
+
+#### Publish npm module to private server
+```
+cd [project_folder]
+npm adduser
+npm publish
 ```
 
 #### Test code 
@@ -37,10 +53,6 @@ app.js
 ```
 require('helloworld.js')();
 ```
-
-
-
-
 
 # Linsence
 The MIT License (MIT)
